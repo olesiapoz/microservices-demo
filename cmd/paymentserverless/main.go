@@ -12,9 +12,9 @@ import (
 	"os/signal"
 	"strings"
 	"syscall"
-
+	
 	"github.com/go-kit/kit/log"
-	"github.com/microservices-demo/payment"
+	"github.com/olesiapoz/microservices-demo"
 	stdopentracing "github.com/opentracing/opentracing-go"
 	zipkin "github.com/openzipkin/zipkin-go-opentracing"
 	"golang.org/x/net/context"
