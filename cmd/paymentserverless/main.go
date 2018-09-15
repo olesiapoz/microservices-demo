@@ -14,7 +14,7 @@ import (
 	"syscall"
 	
 	"github.com/go-kit/kit/log"
-	"github.com/olesiapoz/microservices-demo/service"
+	"github.com/olesiapoz/microservices-demo/payment"
 	stdopentracing "github.com/opentracing/opentracing-go"
 	zipkin "github.com/openzipkin/zipkin-go-opentracing"
 	"golang.org/x/net/context"
@@ -32,6 +32,7 @@ func main() {
 	// last line of stdout is the result JSON object as a string
 	msg := map[string]string{"ammount": (ammount)}
 	res, _ := json.Marshal(msg)
+	fmt.Println(string(res))
 	
 	/*var (
 		declineAmount = flag.Float64("decline", 105, "Decline payments over certain amount")
